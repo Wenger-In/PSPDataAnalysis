@@ -227,7 +227,9 @@ theta_BR = acosd(Br./B_magni);
 Br_calc = Br(BEpoch >= time_calc_beg & BEpoch <= time_calc_end); Br_calc(isnan(Br_calc)) = mean(Br_calc,'omitnan');
 Bt_calc = Bt(BEpoch >= time_calc_beg & BEpoch <= time_calc_end); Bt_calc(isnan(Bt_calc)) = mean(Bt_calc,'omitnan');
 Bn_calc = Bn(BEpoch >= time_calc_beg & BEpoch <= time_calc_end); Bn_calc(isnan(Bn_calc)) = mean(Bn_calc,'omitnan');
-M = [mean(Br_calc.*Br_calc) - mean(Br_calc)*mean(Br_calc), mean(Br_calc.*Bt_calc) - mean(Br_calc)*mean(Bt_calc), mean(Br_calc.*Bn_calc) - mean(Br_calc)*mean(Bn_calc); mean(Bt_calc.*Br_calc) - mean(Bt_calc)*mean(Br_calc), mean(Bt_calc.*Bt_calc) - mean(Bt_calc)*mean(Bt_calc), mean(Bt_calc.*Bn_calc) - mean(Bt_calc)*mean(Bn_calc); mean(Bn_calc.*Br_calc) - mean(Bn_calc)*mean(Br_calc), mean(Bn_calc.*Bt_calc) - mean(Bn_calc)*mean(Bt_calc), mean(Bn_calc.*Bn_calc) - mean(Bn_calc)*mean(Bn_calc)];
+M = [mean(Br_calc.*Br_calc) - mean(Br_calc)*mean(Br_calc), mean(Br_calc.*Bt_calc) - mean(Br_calc)*mean(Bt_calc), mean(Br_calc.*Bn_calc) - mean(Br_calc)*mean(Bn_calc); ...
+    mean(Bt_calc.*Br_calc) - mean(Bt_calc)*mean(Br_calc), mean(Bt_calc.*Bt_calc) - mean(Bt_calc)*mean(Bt_calc), mean(Bt_calc.*Bn_calc) - mean(Bt_calc)*mean(Bn_calc); ...
+    mean(Bn_calc.*Br_calc) - mean(Bn_calc)*mean(Br_calc), mean(Bn_calc.*Bt_calc) - mean(Bn_calc)*mean(Bt_calc), mean(Bn_calc.*Bn_calc) - mean(Bn_calc)*mean(Bn_calc)];
 [V, D] = eig(M); % lambda1 < lambda2 < lambda3; order: N, M, L
 % need to satisfy lambda2 / lambda1 >= 8
 e_L = V(:,3)/(sqrt(dot(V(:,3), V(:,3))));
