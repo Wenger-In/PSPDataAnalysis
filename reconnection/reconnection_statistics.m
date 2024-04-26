@@ -22,7 +22,7 @@ comp_slt_ind = [3,4,5,6,8,11,12,13,15];
 comp_day_lst = ['20200526';'20200529';'20200601';'20200608';'20200919';'20200920';'20200925'; ...
     '20200925';'20210117';'20210123';'20210429';'20210429';'20210429';'20210429';'20210429'];
 comp_plot_beg_lst = ['17:00:01';'23:00:01';'19:48:01';'11:00:01';'23:00:01';'20:45:01';'10:00:01'; ...
-    '13:30:01';'14:10:01';'00:28:01';'00:50:01';'07:50:01';'09:20:01';'09:30:01';'13:37:01'];
+    '13:30:01';'14:10:01';'00:28:01';'00:50:01';'07:55:01';'09:20:01';'09:30:01';'13:37:01'];
 comp_plot_end_lst = ['20:59:59';'23:44:59';'19:56:59';'11:13:59';'23:05:59';'20:59:59';'10:49:59'; ...
     '13:35:59';'14:29:59';'00:31:59';'00:59:59';'08:39:59';'09:29:59';'10:29:59';'13:44:59'];
 comp_Vdata_lst = ['spc';'spc';'spc';'spi';'spc';'spc';'spi'; ...
@@ -43,6 +43,36 @@ comp_exht_beg_lst = ['18:50:00';'23:20:30';'19:51:00';'11:05:30';'23:02:30';'20:
     '13:33:10';'14:15:00';'00:29:25';'00:54:45';'08:14:30';'09:24:30';'09:35:00';'13:40:40'];
 comp_exht_end_lst = ['20:10:00';'23:27:30';'19:52:30';'11:06:30';'23:03:30';'20:54:10';'10:35:00'; ...
     '13:34:00';'14:21:30';'00:29:35';'00:55:20';'08:28:00';'09:25:30';'09:47:00';'13:41:40'];
+% slow shock normal and speed
+comp_lead_us_calc_beg_lst = ['17:51:00';'23:10:00';'19:48:00';'11:01:00';'23:01:00';'20:46:00';'10:01:00'; ...
+    '13:30:00';'14:10:00';'00:28:00';'00:52:00';'08:13:00';'09:20:00';'09:30:00';'13:40:00'];
+comp_lead_us_calc_end_lst = ['17:59:00';'23:20:00';'19:51:00';'11:05:00';'23:02:30';'20:52:00';'10:10:00'; ...
+    '13:32:00';'14:15:00';'00:29:00';'00:54:00';'08:14:00';'09:24:00';'09:34:00';'13:40:40'];
+comp_lead_ds_calc_beg_lst = ['17:51:00';'23:10:00';'19:48:00';'11:01:00';'23:01:00';'20:46:00';'10:01:00'; ...
+    '13:30:00';'14:10:00';'00:28:00';'00:52:00';'08:18:20';'09:20:00';'09:30:00';'13:40:00'];
+comp_lead_ds_calc_end_lst = ['17:59:00';'23:20:00';'19:51:00';'11:05:00';'23:02:30';'20:52:00';'10:10:00'; ...
+    '13:32:00';'14:15:00';'00:29:00';'00:54:00';'08:19:20';'09:24:00';'09:34:00';'13:40:40'];
+comp_tral_ds_calc_beg_lst = ['20:15:00';'23:35:00';'19:53:00';'11:07:00';'23:04:30';'20:54:00';'10:40:00'; ...
+    '13:34:00';'14:27:00';'00:30:00';'00:57:00';'08:20:00';'09:26:00';'09:53:00';'13:42:00'];
+comp_tral_ds_calc_end_lst = ['20:34:00';'23:45:00';'19:56:00';'11:11:00';'23:06:00';'20:58:00';'10:49:00'; ...
+    '13:36:00';'14:30:00';'00:31:00';'00:59:00';'08:20:40';'09:30:00';'09:57:00';'13:43:00'];
+comp_tral_us_calc_beg_lst = ['20:15:00';'23:35:00';'19:53:00';'11:07:00';'23:04:30';'20:54:00';'10:40:00'; ...
+    '13:34:00';'14:27:00';'00:30:00';'00:57:00';'08:28:30';'09:26:00';'09:53:00';'13:42:00'];
+comp_tral_us_calc_end_lst = ['20:34:00';'23:45:00';'19:56:00';'11:11:00';'23:06:00';'20:58:00';'10:49:00'; ...
+    '13:36:00';'14:30:00';'00:31:00';'00:59:00';'08:29:30';'09:30:00';'09:57:00';'13:43:00'];
+% slow shock identification
+comp_lead_us_lst = ['17:51:00';'23:10:00';'19:48:00';'11:01:00';'23:01:00';'20:46:00';'10:01:00'; ...
+    '13:30:00';'14:10:00';'00:28:00';'00:52:00';'08:12:00';'09:20:00';'09:30:00';'13:40:00'];
+comp_lead_ss_lst = ['17:51:00';'23:10:00';'19:48:00';'11:01:00';'23:01:00';'20:46:00';'10:01:00'; ...
+    '13:30:00';'14:10:00';'00:28:00';'00:52:00';'08:14:35';'09:20:00';'09:30:00';'13:40:00'];
+comp_lead_ds_lst = ['17:51:00';'23:10:00';'19:48:00';'11:01:00';'23:01:00';'20:46:00';'10:01:00'; ...
+    '13:30:00';'14:10:00';'00:28:00';'00:52:00';'08:17:00';'09:20:00';'09:30:00';'13:40:00'];
+comp_tral_ds_lst = ['17:51:00';'23:10:00';'19:48:00';'11:01:00';'23:01:00';'20:46:00';'10:01:00'; ...
+    '13:30:00';'14:10:00';'00:28:00';'00:52:00';'08:27:00';'09:20:00';'09:30:00';'13:40:00'];
+comp_tral_ss_lst = ['17:51:00';'23:10:00';'19:48:00';'11:01:00';'23:01:00';'20:46:00';'10:01:00'; ...
+    '13:30:00';'14:10:00';'00:28:00';'00:52:00';'08:28:00';'09:20:00';'09:30:00';'13:40:00'];
+comp_tral_us_lst = ['17:51:00';'23:10:00';'19:48:00';'11:01:00';'23:01:00';'20:46:00';'10:01:00'; ...
+    '13:30:00';'14:10:00';'00:28:00';'00:52:00';'08:29:30';'09:20:00';'09:30:00';'13:40:00'];
 %% list of (partial) cases: case_day_lst, plot_beg_lst, plot_end_lst, Vdata_lst,mva_beg_lst, mva_end_lst,lead_beg_lst, lead_end_lst, tral_beg_lst, tral_end_lst,exht_beg_lst, exht_end_lst
 num_part = 3;
 part_lst = 1 : 1 : num_part;
@@ -59,6 +89,20 @@ part_tral_beg_lst = part_plot_beg_lst;
 part_tral_end_lst = part_plot_end_lst;
 part_exht_beg_lst = ['22:26:00';'15:53:00';'04:00:00'];
 part_exht_end_lst = ['22:50:00';'16:08:00';'05:58:00'];
+part_lead_us_calc_beg_lst = part_plot_beg_lst;
+part_lead_us_calc_end_lst = part_plot_end_lst;
+part_lead_ds_calc_beg_lst = part_plot_beg_lst;
+part_lead_ds_calc_end_lst = part_plot_end_lst;
+part_tral_ds_calc_beg_lst = part_plot_beg_lst;
+part_tral_ds_calc_end_lst = part_plot_end_lst;
+part_tral_us_calc_beg_lst = part_plot_beg_lst;
+part_tral_us_calc_end_lst = part_plot_end_lst;
+part_lead_us_lst = part_plot_beg_lst;
+part_lead_ss_lst = part_plot_beg_lst;
+part_lead_ds_lst = part_plot_beg_lst;
+part_tral_ds_lst = part_plot_beg_lst;
+part_tral_ss_lst = part_plot_beg_lst;
+part_tral_us_lst = part_plot_beg_lst;
 %% complete, partial or all cases
 num_case = num_part + num_comp - 6;
 case_lst = [part_lst, comp_lst(comp_slt_ind)];
@@ -75,10 +119,24 @@ tral_beg_lst = [part_tral_beg_lst; comp_tral_beg_lst(comp_slt_ind,:)];
 tral_end_lst = [part_tral_end_lst; comp_tral_end_lst(comp_slt_ind,:)];
 exht_beg_lst = [part_exht_beg_lst; comp_exht_beg_lst(comp_slt_ind,:)];
 exht_end_lst = [part_exht_end_lst; comp_exht_end_lst(comp_slt_ind,:)];
+lead_us_calc_beg_lst = [part_lead_us_calc_beg_lst; comp_lead_us_calc_beg_lst(comp_slt_ind,:)];
+lead_us_calc_end_lst = [part_lead_us_calc_end_lst; comp_lead_us_calc_end_lst(comp_slt_ind,:)];
+lead_ds_calc_beg_lst = [part_lead_ds_calc_beg_lst; comp_lead_ds_calc_beg_lst(comp_slt_ind,:)];
+lead_ds_calc_end_lst = [part_lead_ds_calc_end_lst; comp_lead_ds_calc_end_lst(comp_slt_ind,:)];
+tral_ds_calc_beg_lst = [part_tral_ds_calc_beg_lst; comp_tral_ds_calc_beg_lst(comp_slt_ind,:)];
+tral_ds_calc_end_lst = [part_tral_ds_calc_end_lst; comp_tral_ds_calc_end_lst(comp_slt_ind,:)];
+tral_us_calc_beg_lst = [part_tral_us_calc_beg_lst; comp_tral_us_calc_beg_lst(comp_slt_ind,:)];
+tral_us_calc_end_lst = [part_tral_us_calc_end_lst; comp_tral_us_calc_end_lst(comp_slt_ind,:)];
 back_beg_lst = ['22:00:00';'15:35:00';'06:30:00';'19:53:00';'11:04:00';'23:01:00';'20:52:00'; ...
     '13:31:10';'00:56:00';'08:00:00';'09:23:00';'13:39:00'];
 back_end_lst = ['22:24:00';'15:50:00';'08:30:00';'19:54:30';'11:05:00';'23:02:00';'20:52:30'; ...
     '13:32:00';'00:56:35';'08:13:30';'09:24:00';'13:40:00'];
+lead_us_lst = [part_lead_us_lst; comp_lead_us_lst(comp_slt_ind,:)];
+lead_ss_lst = [part_lead_ss_lst; comp_lead_ss_lst(comp_slt_ind,:)];
+lead_ds_lst = [part_lead_ds_lst; comp_lead_ds_lst(comp_slt_ind,:)];
+tral_us_lst = [part_tral_us_lst; comp_tral_us_lst(comp_slt_ind,:)];
+tral_ss_lst = [part_tral_ss_lst; comp_tral_ss_lst(comp_slt_ind,:)];
+tral_ds_lst = [part_tral_ds_lst; comp_tral_ds_lst(comp_slt_ind,:)];
 %%
 
 %% target properties
@@ -123,7 +181,7 @@ cL = 299792458 * 1e-3; % unit: km/s
 Rs = 6.955e5; % unit: km
 eV2K = 11605;
 %% data analysis
-for i_case = 1:num_case %10
+for i_case = 10:10%1:num_case %10
     close all;
     psp_dir = ['E:\Research\Data\PSP\Encounter ',num2str(case_enc_lst(i_case)),'\'];
     case_day = case_day_lst(i_case,:);
@@ -366,6 +424,42 @@ for i_case = 1:num_case %10
     back_end_epoch = datenum([case_day(1:4),'-',case_day(5:6),'-',case_day(7:8),' ',back_end_lst(i_case,:)]);
     back_index = find(std_epoch >= back_beg_epoch & std_epoch <= back_end_epoch);
     back_Epoch = std_epoch(back_index);
+    % lead slow shock upsteam
+    lead_us_calc_beg_epoch = datenum([case_day(1:4),'-',case_day(5:6),'-',case_day(7:8),' ',lead_us_calc_beg_lst(i_case,:)]);
+    lead_us_calc_end_epoch = datenum([case_day(1:4),'-',case_day(5:6),'-',case_day(7:8),' ',lead_us_calc_end_lst(i_case,:)]);
+    lead_us_calc_index = find(std_epoch >= lead_us_calc_beg_epoch & std_epoch <= lead_us_calc_end_epoch);
+    lead_us_calc_Epoch = std_epoch(lead_us_calc_index);
+    % lead slow shock downstream
+    lead_ds_calc_beg_epoch = datenum([case_day(1:4),'-',case_day(5:6),'-',case_day(7:8),' ',lead_ds_calc_beg_lst(i_case,:)]);
+    lead_ds_calc_end_epoch = datenum([case_day(1:4),'-',case_day(5:6),'-',case_day(7:8),' ',lead_ds_calc_end_lst(i_case,:)]);
+    lead_ds_calc_index = find(std_epoch >= lead_ds_calc_beg_epoch & std_epoch <= lead_ds_calc_end_epoch);
+    lead_ds_calc_Epoch = std_epoch(lead_ds_calc_index);
+    % trailing slow shock downstream
+    tral_ds_calc_beg_epoch = datenum([case_day(1:4),'-',case_day(5:6),'-',case_day(7:8),' ',tral_ds_calc_beg_lst(i_case,:)]);
+    tral_ds_calc_end_epoch = datenum([case_day(1:4),'-',case_day(5:6),'-',case_day(7:8),' ',tral_ds_calc_end_lst(i_case,:)]);
+    tral_ds_calc_index = find(std_epoch >= tral_ds_calc_beg_epoch & std_epoch <= tral_ds_calc_end_epoch);
+    tral_ds_calc_Epoch = std_epoch(tral_ds_calc_index);
+    % trailing slow shock upstream
+    tral_us_calc_beg_epoch = datenum([case_day(1:4),'-',case_day(5:6),'-',case_day(7:8),' ',tral_us_calc_beg_lst(i_case,:)]);
+    tral_us_calc_end_epoch = datenum([case_day(1:4),'-',case_day(5:6),'-',case_day(7:8),' ',tral_us_calc_end_lst(i_case,:)]);
+    tral_us_calc_index = find(std_epoch >= tral_us_calc_beg_epoch & std_epoch <= tral_us_calc_end_epoch);
+    tral_us_calc_Epoch = std_epoch(tral_us_calc_index);
+    % lead slow shock
+    lead_us_beg_epoch = datenum([case_day(1:4),'-',case_day(5:6),'-',case_day(7:8),' ',lead_us_lst(i_case,:)]);
+    lead_ss_epoch = datenum([case_day(1:4),'-',case_day(5:6),'-',case_day(7:8),' ',lead_ss_lst(i_case,:)]);
+    lead_ds_end_epoch = datenum([case_day(1:4),'-',case_day(5:6),'-',case_day(7:8),' ',lead_ds_lst(i_case,:)]);
+    lead_us_index = find(std_epoch >= lead_us_beg_epoch & std_epoch <= lead_ss_epoch);
+    lead_ds_index = find(std_epoch >= lead_ss_epoch & std_epoch <= lead_ds_end_epoch);
+    lead_us_epoch = std_epoch(lead_us_index);
+    lead_ds_epoch = std_epoch(lead_ds_index);
+    % trailing slow shock
+    tral_ds_beg_epoch = datenum([case_day(1:4),'-',case_day(5:6),'-',case_day(7:8),' ',tral_ds_lst(i_case,:)]);
+    tral_ss_epoch = datenum([case_day(1:4),'-',case_day(5:6),'-',case_day(7:8),' ',tral_ss_lst(i_case,:)]);
+    tral_us_end_epoch = datenum([case_day(1:4),'-',case_day(5:6),'-',case_day(7:8),' ',tral_us_lst(i_case,:)]);
+    tral_ds_index = find(std_epoch >= tral_ds_beg_epoch & std_epoch <= tral_ss_epoch);
+    tral_us_index = find(std_epoch >= tral_ss_epoch & std_epoch <= tral_us_end_epoch);
+    tral_ds_epoch = std_epoch(tral_ds_index);
+    tral_us_epoch = std_epoch(tral_us_index);
 %% plot overview: Brtn, Vrtn, BLMN, VLMN, PA, VN
     figure();
     LineWidth = 2;%1
@@ -385,6 +479,9 @@ for i_case = 1:num_case %10
     vertical_marks(exht_beg_epoch,exht_end_epoch,'-m')
 %     vertical_marks(tral_beg_epoch,tral_end_epoch,'--b')
     vertical_marks(back_beg_epoch,back_end_epoch,'-k')
+    yl = ylim;
+    vertical_shadows(lead_us_beg_epoch, lead_ds_end_epoch, yl(1), yl(2), 'y')
+    vertical_shadows(tral_ds_beg_epoch, tral_us_end_epoch, yl(1), yl(2), 'c')
     ylabel('Brtn [nT]')
     xlim([std_epoch(1) std_epoch(end)]);
     datetick('x','HH:MM');
@@ -409,6 +506,9 @@ for i_case = 1:num_case %10
     vertical_marks(exht_beg_epoch,exht_end_epoch,'-m')
 %     vertical_marks(tral_beg_epoch,tral_end_epoch,'--b')
     vertical_marks(back_beg_epoch,back_end_epoch,'-k')
+    yl = ylim;
+    vertical_shadows(lead_us_beg_epoch, lead_ds_end_epoch, yl(1), yl(2), 'y')
+    vertical_shadows(tral_ds_beg_epoch, tral_us_end_epoch, yl(1), yl(2), 'c')
     ylabel('B_{LMN} [nT]')
     xlim([std_epoch(1) std_epoch(end)]);
     datetick('x','HH:MM');
@@ -423,6 +523,9 @@ for i_case = 1:num_case %10
     vertical_marks(exht_beg_epoch,exht_end_epoch,'-m')
 %     vertical_marks(tral_beg_epoch,tral_end_epoch,'--b')
     vertical_marks(back_beg_epoch,back_end_epoch,'-k')
+    yl = ylim;
+    vertical_shadows(lead_us_beg_epoch, lead_ds_end_epoch, -100, yl(2), 'y')
+    vertical_shadows(tral_ds_beg_epoch, tral_us_end_epoch, -100, yl(2), 'c')
     ylabel('V_{LMN} [km/s]')
     xlim([std_epoch(1) std_epoch(end)]);
     datetick('x','HH:MM');
@@ -445,6 +548,9 @@ for i_case = 1:num_case %10
     vertical_marks(exht_beg_epoch,exht_end_epoch,'-m')
 %     vertical_marks(tral_beg_epoch,tral_end_epoch,'--b')
     vertical_marks(back_beg_epoch,back_end_epoch,'-k')
+    yl = ylim;
+    vertical_shadows(lead_us_beg_epoch, lead_ds_end_epoch, 2000, yl(2), 'y')
+    vertical_shadows(tral_ds_beg_epoch, tral_us_end_epoch, 2000, yl(2), 'c')
     ylabel('N_p [cm^{-3}]')
     xlim([std_epoch(1) std_epoch(end)]); grid on
     datetick('x','HH:MM');
@@ -456,6 +562,9 @@ for i_case = 1:num_case %10
     vertical_marks(exht_beg_epoch,exht_end_epoch,'-m')
 %     vertical_marks(tral_beg_epoch,tral_end_epoch,'--b')
     vertical_marks(back_beg_epoch,back_end_epoch,'-k')
+    yl = ylim;
+    vertical_shadows(lead_us_beg_epoch, lead_ds_end_epoch, 0, yl(2), 'y')
+    vertical_shadows(tral_ds_beg_epoch, tral_us_end_epoch, 0, yl(2), 'c')
     ylabel('Tp [eV]')
     xlim([std_epoch(1) std_epoch(end)]); grid on
     datetick('x','HH:MM');
@@ -467,6 +576,9 @@ for i_case = 1:num_case %10
     vertical_marks(exht_beg_epoch,exht_end_epoch,'-m')
 %     vertical_marks(tral_beg_epoch,tral_end_epoch,'--b')
     vertical_marks(back_beg_epoch,back_end_epoch,'-k')
+    yl = ylim;
+    vertical_shadows(lead_us_beg_epoch, lead_ds_end_epoch, 0.1, yl(2), 'y')
+    vertical_shadows(tral_ds_beg_epoch, tral_us_end_epoch, 0.1, yl(2), 'c')
     ylabel('\beta')
     xlim([std_epoch(1) std_epoch(end)]); grid on
     datetick('x','HH:MM');
@@ -482,10 +594,14 @@ for i_case = 1:num_case %10
 %     vertical_marks(tral_beg_epoch,tral_end_epoch,'--b')
     vertical_marks(back_beg_epoch,back_end_epoch,'-k')
 %     ylabel('PA (norm)')
+    yyaxis left
     ylabel({'314 eV';'e^- PA [deg.]'})
+    yyaxis right
+    ylabel('log_{10}(Flux)')
+    set(gca,'ytick',[],'yticklabel',[],'XMinorTick','on','ycolor','k');
 %     legend('314','Location','east')
     xlim([spe_epoch_plot(1) spe_epoch_plot(end)]);
-    colormap jet; colorbar;
+    colormap jet
     set(gca,'xticklabel',[],'tickdir','in','LineWidth',LineWidth,'FontSize',FontSize);
     
 %     subplot('position',[left_base,down_base+height*0,width,height]);
@@ -514,26 +630,78 @@ for i_case = 1:num_case %10
     BL_lead = BL_interp(lead_index); BL_lead_mean = mean(BL_lead,'omitnan');
     BL_exht = BL_interp(exht_index); BL_exht_mean = mean(BL_exht,'omitnan');
     BL_tral = BL_interp(tral_index); BL_tral_mean = mean(BL_tral,'omitnan');
+    BL_lead_us_calc = BL_interp(lead_us_calc_index); BL_lead_us_calc_mean = mean(BL_lead_us_calc, 'omitnan');
+    BL_lead_ds_calc = BL_interp(lead_ds_calc_index); BL_lead_ds_calc_mean = mean(BL_lead_ds_calc, 'omitnan');
+    BL_tral_ds_calc = BL_interp(tral_ds_calc_index); BL_tral_ds_calc_mean = mean(BL_tral_ds_calc, 'omitnan');
+    BL_tral_us_calc = BL_interp(tral_us_calc_index); BL_tral_us_calc_mean = mean(BL_tral_us_calc, 'omitnan');
+    BL_lead_us = BL_interp(lead_us_index); BL_lead_us_mean = mean(BL_lead_us, 'omitnan');
+    BL_lead_ds = BL_interp(lead_ds_index); BL_lead_ds_mean = mean(BL_lead_ds, 'omitnan');
+    BL_tral_ds = BL_interp(tral_ds_index); BL_tral_ds_mean = mean(BL_tral_ds, 'omitnan');
+    BL_tral_us = BL_interp(tral_us_index); BL_tral_us_mean = mean(BL_tral_us, 'omitnan');
     BM_lead = BM_interp(lead_index); BM_lead_mean = mean(BM_lead,'omitnan');
     BM_exht = BM_interp(exht_index); BM_exht_mean = mean(BM_exht,'omitnan');
     BM_tral = BM_interp(tral_index); BM_tral_mean = mean(BM_tral,'omitnan');
+    BM_lead_us_calc = BM_interp(lead_us_calc_index); BM_lead_us_calc_mean = mean(BM_lead_us_calc, 'omitnan');
+    BM_lead_ds_calc = BM_interp(lead_ds_calc_index); BM_lead_ds_calc_mean = mean(BM_lead_ds_calc, 'omitnan');
+    BM_tral_ds_calc = BM_interp(tral_ds_calc_index); BM_tral_ds_calc_mean = mean(BM_tral_ds_calc, 'omitnan');
+    BM_tral_us_calc = BM_interp(tral_us_calc_index); BM_tral_us_calc_mean = mean(BM_tral_us_calc, 'omitnan');
+    BM_lead_us = BM_interp(lead_us_index); BM_lead_us_mean = mean(BM_lead_us, 'omitnan');
+    BM_lead_ds = BM_interp(lead_ds_index); BM_lead_ds_mean = mean(BM_lead_ds, 'omitnan');
+    BM_tral_ds = BM_interp(tral_ds_index); BM_tral_ds_mean = mean(BM_tral_ds, 'omitnan');
+    BM_tral_us = BM_interp(tral_us_index); BM_tral_us_mean = mean(BM_tral_us, 'omitnan');
     BN_lead = BN_interp(lead_index); BN_lead_mean = mean(BN_lead,'omitnan');
     BN_exht = BN_interp(exht_index); BN_exht_mean = mean(BN_exht,'omitnan');
     BN_tral = BN_interp(tral_index); BN_tral_mean = mean(BN_tral,'omitnan');
+    BN_lead_us_calc = BN_interp(lead_us_calc_index); BN_lead_us_calc_mean = mean(BN_lead_us_calc, 'omitnan');
+    BN_lead_ds_calc = BN_interp(lead_ds_calc_index); BN_lead_ds_calc_mean = mean(BN_lead_ds_calc, 'omitnan');
+    BN_tral_ds_calc = BN_interp(tral_ds_calc_index); BN_tral_ds_calc_mean = mean(BN_tral_ds_calc, 'omitnan');
+    BN_tral_us_calc = BN_interp(tral_us_calc_index); BN_tral_us_calc_mean = mean(BN_tral_us_calc, 'omitnan');
+    BN_lead_us = BN_interp(lead_us_index); BN_lead_us_mean = mean(BN_lead_us, 'omitnan');
+    BN_lead_ds = BN_interp(lead_ds_index); BN_lead_ds_mean = mean(BN_lead_ds, 'omitnan');
+    BN_tral_ds = BN_interp(tral_ds_index); BN_tral_ds_mean = mean(BN_tral_ds, 'omitnan');
+    BN_tral_us = BN_interp(tral_us_index); BN_tral_us_mean = mean(BN_tral_us, 'omitnan');
     % velocity components: VL,VM,VN
     VL_lead = VL_interp(lead_index); VL_lead_mean = mean(VL_lead,'omitnan');
     VL_exht = VL_interp(exht_index); VL_exht_mean = mean(VL_exht,'omitnan');
     VL_tral = VL_interp(tral_index); VL_tral_mean = mean(VL_tral,'omitnan');
+    VL_lead_us_calc = VL_interp(lead_us_calc_index); VL_lead_us_calc_mean = mean(VL_lead_us_calc, 'omitnan');
+    VL_lead_ds_calc = VL_interp(lead_ds_calc_index); VL_lead_ds_calc_mean = mean(VL_lead_ds_calc, 'omitnan');
+    VL_tral_ds_calc = VL_interp(tral_ds_calc_index); VL_tral_ds_calc_mean = mean(VL_tral_ds_calc, 'omitnan');
+    VL_tral_us_calc = VL_interp(tral_us_calc_index); VL_tral_us_calc_mean = mean(VL_tral_us_calc, 'omitnan');
+    VL_lead_us = VL_interp(lead_us_index); VL_lead_us_mean = mean(VL_lead_us, 'omitnan');
+    VL_lead_ds = VL_interp(lead_ds_index); VL_lead_ds_mean = mean(VL_lead_ds, 'omitnan');
+    VL_tral_ds = VL_interp(tral_ds_index); VL_tral_ds_mean = mean(VL_tral_ds, 'omitnan');
+    VL_tral_us = VL_interp(tral_us_index); VL_tral_us_mean = mean(VL_tral_us, 'omitnan');
     VM_lead = VM_interp(lead_index); VM_lead_mean = mean(VM_lead,'omitnan');
     VM_exht = VM_interp(exht_index); VM_exht_mean = mean(VM_exht,'omitnan');
     VM_tral = VM_interp(tral_index); VM_tral_mean = mean(VM_tral,'omitnan');
+    VM_lead_us_calc = VM_interp(lead_us_calc_index); VM_lead_us_calc_mean = mean(VM_lead_us_calc, 'omitnan');
+    VM_lead_ds_calc = VM_interp(lead_ds_calc_index); VM_lead_ds_calc_mean = mean(VM_lead_ds_calc, 'omitnan');
+    VM_tral_ds_calc = VM_interp(tral_ds_calc_index); VM_tral_ds_calc_mean = mean(VM_tral_ds_calc, 'omitnan');
+    VM_tral_us_calc = VM_interp(tral_us_calc_index); VM_tral_us_calc_mean = mean(VM_tral_us_calc, 'omitnan');
+    VM_lead_us = VM_interp(lead_us_index); VM_lead_us_mean = mean(VM_lead_us, 'omitnan');
+    VM_lead_ds = VM_interp(lead_ds_index); VM_lead_ds_mean = mean(VM_lead_ds, 'omitnan');
+    VM_tral_ds = VM_interp(tral_ds_index); VM_tral_ds_mean = mean(VM_tral_ds, 'omitnan');
+    VM_tral_us = VM_interp(tral_us_index); VM_tral_us_mean = mean(VM_tral_us, 'omitnan');
     VN_lead = VN_interp(lead_index); VN_lead_mean = mean(VN_lead,'omitnan');
     VN_exht = VN_interp(exht_index); VN_exht_mean = mean(VN_exht,'omitnan');
     VN_tral = VN_interp(tral_index); VN_tral_mean = mean(VN_tral,'omitnan');
+    VN_lead_us_calc = VN_interp(lead_us_calc_index); VN_lead_us_calc_mean = mean(VN_lead_us_calc, 'omitnan');
+    VN_lead_ds_calc = VN_interp(lead_ds_calc_index); VN_lead_ds_calc_mean = mean(VN_lead_ds_calc, 'omitnan');
+    VN_tral_ds_calc = VN_interp(tral_ds_calc_index); VN_tral_ds_calc_mean = mean(VN_tral_ds_calc, 'omitnan');
+    VN_tral_us_calc = VN_interp(tral_us_calc_index); VN_tral_us_calc_mean = mean(VN_tral_us_calc, 'omitnan');
+    VN_lead_us = VN_interp(lead_us_index); VN_lead_us_mean = mean(VN_lead_us, 'omitnan');
+    VN_lead_ds = VN_interp(lead_ds_index); VN_lead_ds_mean = mean(VN_lead_ds, 'omitnan');
+    VN_tral_ds = VN_interp(tral_ds_index); VN_tral_ds_mean = mean(VN_tral_ds, 'omitnan');
+    VN_tral_us = VN_interp(tral_us_index); VN_tral_us_mean = mean(VN_tral_us, 'omitnan');
     % ion density: Np
     Np_lead = Np_interp(lead_index); Np_lead_mean = mean(Np_lead,'omitnan');
     Np_exht = Np_interp(exht_index); Np_exht_mean = mean(Np_exht,'omitnan');
     Np_tral = Np_interp(tral_index); Np_tral_mean = mean(Np_tral,'omitnan');
+    Np_lead_us = Np_interp(lead_us_index); Np_lead_us_mean = mean(Np_lead_us, 'omitnan');
+    Np_lead_ds = Np_interp(lead_ds_index); Np_lead_ds_mean = mean(Np_lead_ds, 'omitnan');
+    Np_tral_ds = Np_interp(tral_ds_index); Np_tral_ds_mean = mean(Np_tral_ds, 'omitnan');
+    Np_tral_us = Np_interp(tral_us_index); Np_tral_us_mean = mean(Np_tral_us, 'omitnan');
     % ion temperature: Tp
     Tp_lead = Tp_interp(lead_index); Tp_lead_mean = mean(Tp_lead,'omitnan');
     Tp_exht = Tp_interp(exht_index); Tp_exht_mean = mean(Tp_exht,'omitnan');
@@ -542,10 +710,19 @@ for i_case = 1:num_case %10
     beta_lead = beta_interp(lead_index); beta_lead_mean = mean(beta_lead,'omitnan');
     beta_exht = beta_interp(exht_index); beta_exht_mean = mean(beta_exht,'omitnan');
     beta_tral = beta_interp(tral_index); beta_tral_mean = mean(beta_tral,'omitnan');
+    % thermal pressure: pth
+    pth_lead_us = pth_interp(lead_us_index); pth_lead_us_mean = mean(pth_lead_us, 'omitnan'); % unit: nPa
+    pth_lead_ds = pth_interp(lead_ds_index); pth_lead_ds_mean = mean(pth_lead_ds, 'omitnan');
+    pth_tral_ds = pth_interp(tral_ds_index); pth_tral_ds_mean = mean(pth_tral_ds, 'omitnan');
+    pth_tral_us = pth_interp(tral_us_index); pth_tral_us_mean = mean(pth_tral_us, 'omitnan');
     % Alfven speed: Va
     Va_lead = Va_interp(lead_index); Va_lead_mean = mean(Va_lead,'omitnan');
     Va_exht = Va_interp(exht_index); Va_exht_mean = mean(Va_exht,'omitnan');
     Va_tral = Va_interp(tral_index); Va_tral_mean = mean(Va_tral,'omitnan');
+    Va_lead_us = Va_interp(lead_us_index); Va_lead_us_mean = mean(Va_lead_us, 'omitnan');
+    Va_lead_ds = Va_interp(lead_ds_index); Va_lead_ds_mean = mean(Va_lead_ds, 'omitnan');
+    Va_tral_ds = Va_interp(tral_ds_index); Va_tral_ds_mean = mean(Va_tral_ds, 'omitnan');
+    Va_tral_us = Va_interp(tral_us_index); Va_tral_us_mean = mean(Va_tral_us, 'omitnan');
 %% calculate distance from the Sun: dist [Rs]
     dist = mean(sc_pos_dist_plot);
     dist_lst(i_case) = dist / Rs; % [Rs]
@@ -608,6 +785,207 @@ for i_case = 1:num_case %10
     % Ti_exht
     Tp_exht = mean(Np_exht .* Tp_exht,'omitnan') / Np_exht_mean;
     Tp_exht_lst(i_case) = Tp_exht; % [eV]
+%%
+
+%% calculate lead slow shock normal (in LMN frame)
+    BLMN_lead_us_calc_mean = [BL_lead_us_calc_mean, BM_lead_us_calc_mean, BN_lead_us_calc_mean];
+    B_lead_us_calc_mod = sqrt(dot(BLMN_lead_us_calc_mean, BLMN_lead_us_calc_mean));
+    BLMN_lead_ds_calc_mean = [BL_lead_ds_calc_mean, BM_lead_ds_calc_mean, BN_lead_ds_calc_mean];
+    B_lead_ds_calc_mod = sqrt(dot(BLMN_lead_ds_calc_mean, BLMN_lead_ds_calc_mean));
+    % calculate shock normal
+    e_N_lead_ss = calc_shock_normal(BLMN_lead_us_calc_mean, BLMN_lead_ds_calc_mean); % in LMN coordinate
+    % calculate shock angle
+    theta_lead_us = acos(dot(BLMN_lead_us_calc_mean, e_N_lead_ss) / B_lead_us_calc_mod); % unit: rad.
+    theta_lead_ds = acos(dot(BLMN_lead_ds_calc_mean, e_N_lead_ss) / B_lead_ds_calc_mod); % unit: rad.
+%% calculate magnetic field in shock coodinate
+    BLMN_lead_us = [BL_lead_us, BM_lead_us, BN_lead_us];
+    BLMN_lead_us_mod = sqrt(BL_lead_us.^2 + BM_lead_us.^2 + BN_lead_us.^2);
+    BN_ss_lead_us = BLMN_lead_us_mod * cos(theta_lead_us);
+    BT_ss_lead_us = BLMN_lead_us_mod * sin(theta_lead_us);
+    BLMN_lead_ds = [BL_lead_ds, BM_lead_ds, BN_lead_ds];
+    BLMN_lead_ds_mod = sqrt(BL_lead_ds.^2 + BM_lead_ds.^2 + BN_lead_ds.^2);
+    BN_ss_lead_ds = BLMN_lead_ds_mod * cos(theta_lead_ds);
+    BT_ss_lead_ds = BLMN_lead_ds_mod * sin(theta_lead_ds);
+%% calculate lead slow shock speed
+    VLMN_lead_us_calc_mean = [VL_lead_us_calc_mean, VM_lead_us_calc_mean, VN_lead_us_calc_mean];
+    VLMN_lead_ds_calc_mean = [VL_lead_ds_calc_mean, VM_lead_ds_calc_mean, VN_lead_ds_calc_mean];
+%     V_lead_ss = dot((Np_lead_ds_mean * VLMN_lead_ds_mean - Np_lead_us_mean * VLMN_lead_us_mean) / (Np_lead_ds_mean - Np_lead_us_mean), e_N_lead_ss);
+    BLMN_lead_us_calc = [BL_lead_us_calc, BM_lead_us_calc, BN_lead_us_calc];
+    BLMN_lead_ds_calc = [BL_lead_ds_calc, BM_lead_ds_calc, BN_lead_ds_calc];
+    VLMN_lead_us_calc = [VL_lead_us_calc, VM_lead_us_calc, VN_lead_us_calc];
+    VLMN_lead_ds_calc = [VL_lead_ds_calc, VM_lead_ds_calc, VN_lead_ds_calc];
+    V_HT_lead = get_V_HT([VLMN_lead_us_calc; VLMN_lead_ds_calc], [BLMN_lead_us_calc; BLMN_lead_ds_calc]);
+    V_lead_ss = dot(V_HT_lead, e_N_lead_ss);
+%% calculate solar wind velocity in lead shock normal direction
+    V_lead_us = [VL_lead_us, VM_lead_us, VN_lead_us];
+    VN_ss_lead_us = V_lead_us * e_N_lead_ss' - V_lead_ss;
+    V_lead_ds = [VL_lead_ds, VM_lead_ds, VN_lead_ds];
+    VN_ss_lead_ds = V_lead_ds * e_N_lead_ss' - V_lead_ss;
+%% calculate Alfven mach number
+    M_alf_lead_us = abs(VN_ss_lead_us' ./ (Va_lead_us * cos(theta_lead_us)));
+    M_alf_lead_us_mean = mean(M_alf_lead_us);
+    M_alf_lead_ds = abs(VN_ss_lead_ds' ./ (Va_lead_ds * cos(theta_lead_ds)));
+    M_alf_lead_ds_mean = mean(M_alf_lead_ds);
+%% calculate slow magnetosonic mach number
+    % sound speed
+    Cs_lead_us = calc_sound_speed(5/3, pth_lead_us_mean, Np_lead_us_mean, mp);
+    Cs_lead_ds = calc_sound_speed(5/3, pth_lead_ds_mean, Np_lead_ds_mean, mp);
+    % calculate slow magnetosonic speed
+    Vs_lead_us = calc_slow_magnetosonic_speed(Va_lead_us_mean, Cs_lead_us, theta_lead_us);
+    Vs_lead_ds = calc_slow_magnetosonic_speed(Va_lead_ds_mean, Cs_lead_ds, theta_lead_ds);
+    % slow magnetosonic mach number
+    M_slow_lead_us = abs(VN_ss_lead_us / Vs_lead_us);
+    M_slow_lead_us_mean = mean(M_slow_lead_us);
+    M_slow_lead_ds = abs(VN_ss_lead_ds / Vs_lead_ds);
+    M_slow_lead_ds_mean = mean(M_slow_lead_ds);
+%%
+
+%% calculate trailing slow shock normal (in LMN frame)
+    BLMN_tral_us_calc_mean = [BL_tral_us_calc_mean, BM_tral_us_calc_mean, BN_tral_us_calc_mean];
+    B_tral_us_calc_mod = sqrt(dot(BLMN_tral_us_calc_mean, BLMN_tral_us_calc_mean));
+    BLMN_tral_ds_calc_mean = [BL_tral_ds_calc_mean, BM_tral_ds_calc_mean, BN_tral_ds_calc_mean];
+    B_tral_ds_calc_mod = sqrt(dot(BLMN_tral_ds_calc_mean, BLMN_tral_ds_calc_mean));
+    % calculate shock normal
+    e_N_tral_ss = calc_shock_normal(BLMN_tral_us_calc_mean, BLMN_tral_ds_calc_mean); % in LMN coordinate
+    % calculate shock angle
+    theta_tral_us = acos(dot(BLMN_tral_us_calc_mean, e_N_tral_ss) / B_tral_us_calc_mod); % unit: rad.
+    theta_tral_ds = acos(dot(BLMN_tral_ds_calc_mean, e_N_tral_ss) / B_tral_ds_calc_mod); % unit: rad.
+%% calculate magnetic field in shock coodinate
+    BLMN_tral_us = [BL_tral_us, BM_tral_us, BN_tral_us];
+    BLMN_tral_us_mod = sqrt(BL_tral_us.^2 + BM_tral_us.^2 + BN_tral_us.^2);
+    BN_ss_tral_us = BLMN_tral_us_mod * cos(theta_tral_us);
+    BT_ss_tral_us = BLMN_tral_us_mod * sin(theta_tral_us);
+    BLMN_tral_ds = [BL_tral_ds, BM_tral_ds, BN_tral_ds];
+    BLMN_tral_ds_mod = sqrt(BL_tral_ds.^2 + BM_tral_ds.^2 + BN_tral_ds.^2);
+    BN_ss_tral_ds = BLMN_tral_ds_mod * cos(theta_tral_ds);
+    BT_ss_tral_ds = BLMN_tral_ds_mod * sin(theta_tral_ds);
+%% calculate trailing slow shock speed
+    VLMN_tral_us_calc_mean = [VL_tral_us_calc_mean, VM_tral_us_calc_mean, VN_tral_us_calc_mean];
+    VLMN_tral_ds_calc_mean = [VL_tral_ds_calc_mean, VM_tral_ds_calc_mean, VN_tral_ds_calc_mean];
+%     V_tral_ss = dot((Np_tral_ds_mean * VLMN_tral_ds_mean - Np_tral_us_mean * VLMN_tral_us_mean) / (Np_tral_ds_mean - Np_tral_us_mean), e_N_tral_ss);
+    BLMN_tral_us_calc = [BL_tral_us_calc, BM_tral_us_calc, BN_tral_us_calc];
+    BLMN_tral_ds_calc = [BL_tral_ds_calc, BM_tral_ds_calc, BN_tral_ds_calc];
+    VLMN_tral_us_calc = [VL_tral_us_calc, VM_tral_us_calc, VN_tral_us_calc];
+    VLMN_tral_ds_calc = [VL_tral_ds_calc, VM_tral_ds_calc, VN_tral_ds_calc];
+    V_HT_tral = get_V_HT([VLMN_tral_ds_calc; VLMN_tral_us_calc], [BLMN_tral_ds_calc; BLMN_tral_us_calc]);
+    V_tral_ss = dot(V_HT_tral, e_N_tral_ss);
+%% calculate solar wind velocity in trailing shock normal direction
+    V_tral_us = [VL_tral_us, VM_tral_us, VN_tral_us];
+    VN_ss_tral_us = V_tral_us * e_N_tral_ss' - V_tral_ss;
+    V_tral_ds = [VL_tral_ds, VM_tral_ds, VN_tral_ds];
+    VN_ss_tral_ds = V_tral_ds * e_N_tral_ss' - V_tral_ss;
+%% calculate Alfven mach number
+    M_alf_tral_us = abs(VN_ss_tral_us' ./ (Va_tral_us * cos(theta_tral_us)));
+    M_alf_tral_us_mean = mean(M_alf_tral_us);
+    M_alf_tral_ds = abs(VN_ss_tral_ds' ./ (Va_tral_ds * cos(theta_tral_ds)));
+    M_alf_tral_ds_mean = mean(M_alf_tral_ds);
+%% calculate slow magnetosonic mach number
+    % sound speed
+    Cs_tral_us = calc_sound_speed(5/3, pth_tral_us_mean, Np_tral_us_mean, mp);
+    Cs_tral_ds = calc_sound_speed(5/3, pth_tral_ds_mean, Np_tral_ds_mean, mp);
+    % calculate slow magnetosonic speed
+    Vs_tral_us = calc_slow_magnetosonic_speed(Va_tral_us_mean, Cs_tral_us, theta_tral_us);
+    Vs_tral_ds = calc_slow_magnetosonic_speed(Va_tral_ds_mean, Cs_tral_ds, theta_tral_ds);
+    % slow magnetosonic mach number
+    M_slow_tral_us = abs(VN_ss_tral_us / Vs_tral_us);
+    M_slow_tral_us_mean = mean(M_slow_tral_us);
+    M_slow_tral_ds = abs(VN_ss_tral_ds / Vs_tral_ds);
+    M_slow_tral_ds_mean = mean(M_slow_tral_ds);
+%% plot figure: lead and trailing slow shock
+    figure();
+    LineWidth = 2;
+    FontSize = 12;
+    left_base = 0.1;
+    down_base = 0.1;
+    width = 0.4;
+    height = 0.2;
+    hspace = 0.05;
+    
+    subplot('position',[left_base,down_base+height*3,width,height])
+    plot([lead_us_epoch,lead_ds_epoch], [BN_ss_lead_us;BN_ss_lead_ds], 'r','LineWidth',LineWidth); hold on
+    plot([lead_us_epoch,lead_ds_epoch], [BT_ss_lead_us;BT_ss_lead_ds], 'b','LineWidth',LineWidth); grid on
+    ylabel('B [nT]')
+    datetick('x','HH:MM:SS');
+    xlim([lead_us_epoch(1) lead_ds_epoch(end)]);
+    set(gca,'xticklabel',[],'tickdir','in','LineWidth',LineWidth,'FontSize',FontSize);
+    legend('B_n','B_t','Location','east','FontSize',FontSize)
+
+%     subplot('position',[left_base,down_base+height*3,width,height])
+%     plot([lead_us_Epoch,lead_ds_Epoch], [atand(BT_ss_lead_us./BN_ss_lead_us);atand(BT_ss_lead_ds./BN_ss_lead_ds)], 'k','LineWidth',LineWidth); grid on
+%     ylabel('\theta_{Bn} [deg.]')
+%     datetick('x','HH:MM:SS');
+%     xlim([lead_us_Epoch(1) lead_ds_Epoch(end)]);
+%     set(gca,'xticklabel',[],'tickdir','in','LineWidth',LineWidth,'FontSize',FontSize);
+
+    subplot('position',[left_base,down_base+height*2,width,height])
+    plot([lead_us_epoch,lead_ds_epoch], [VN_ss_lead_us;VN_ss_lead_ds], 'k','LineWidth',LineWidth); grid on
+    ylabel('V_n [km/s]')
+    datetick('x','HH:MM:SS');
+    xlim([lead_us_epoch(1) lead_ds_epoch(end)]);
+    set(gca,'xticklabel',[],'tickdir','in','LineWidth',LineWidth,'FontSize',FontSize);
+
+    subplot('position',[left_base,down_base+height*1,width,height])
+    plot([lead_us_epoch,lead_ds_epoch], [M_alf_lead_us,M_alf_lead_ds], 'k','LineWidth',LineWidth); hold on
+    yline(1, '--k', 'LineWidth', LineWidth); hold on
+    yline(-1, '--k', 'LineWidth', LineWidth); grid on
+    ylabel('M_A')
+    datetick('x','HH:MM:SS');
+    xlim([lead_us_epoch(1) lead_ds_epoch(end)]);
+    ylim([0 2])
+    set(gca,'xticklabel',[],'tickdir','in','LineWidth',LineWidth,'FontSize',FontSize);
+
+    subplot('position',[left_base,down_base+height*0,width,height])
+    plot([lead_us_epoch,lead_ds_epoch], [M_slow_lead_us;M_slow_lead_ds], 'k','LineWidth',LineWidth); hold on
+    yline(1, '--k', 'LineWidth', LineWidth); hold on
+    yline(-1, '--k', 'LineWidth', LineWidth); grid on
+    ylabel('M_{sm}')
+    xlim([lead_us_epoch(1) lead_ds_epoch(end)]);
+    ylim([0 2])
+    datetick('x','HH:MM:SS');
+    set(gca,'tickdir','in','LineWidth',LineWidth,'FontSize',FontSize);
+
+    subplot('position',[left_base+width+hspace,down_base+height*3,width,height])
+    plot([tral_ds_epoch,tral_us_epoch], [BN_ss_tral_ds;BN_ss_tral_us], 'r','LineWidth',LineWidth); hold on
+    plot([tral_ds_epoch,tral_us_epoch], [BT_ss_tral_ds;BT_ss_tral_us], 'b','LineWidth',LineWidth); grid on
+    ylabel('B [nT]')
+    datetick('x','HH:MM:SS');
+    xlim([tral_ds_epoch(1) tral_us_epoch(end)]);
+    set(gca,'xticklabel',[],'tickdir','in','LineWidth',LineWidth,'FontSize',FontSize);
+    legend('B_n','B_t','Location','east','FontSize',FontSize)
+
+%     subplot('position',[left_base+width+hspace,down_base+height*3,width,height])
+%     plot([tral_ds_Epoch,tral_us_Epoch], [atand(BT_ss_tral_ds./BN_ss_tral_ds);atand(BT_ss_tral_us./BN_ss_tral_us)], 'k','LineWidth',LineWidth); grid on
+%     ylabel('\theta_{Bn} [deg.]')
+%     datetick('x','HH:MM:SS');
+%     xlim([tral_ds_Epoch(1) tral_us_Epoch(end)]);
+%     set(gca,'xticklabel',[],'tickdir','in','LineWidth',LineWidth,'FontSize',FontSize);
+
+    subplot('position',[left_base+width+hspace,down_base+height*2,width,height])
+    plot([tral_ds_epoch,tral_us_epoch], [VN_ss_tral_ds;VN_ss_tral_us], 'k','LineWidth',LineWidth); grid on
+    ylabel('V_n [km/s]')
+    datetick('x','HH:MM:SS');
+    xlim([tral_ds_epoch(1) tral_us_epoch(end)]);
+    set(gca,'xticklabel',[],'tickdir','in','LineWidth',LineWidth,'FontSize',FontSize);
+
+    subplot('position',[left_base+width+hspace,down_base+height*1,width,height])
+    plot([tral_ds_epoch,tral_us_epoch], [M_alf_tral_ds,M_alf_tral_us], 'k','LineWidth',LineWidth); grid on
+    yline(1, '--k', 'LineWidth', LineWidth); hold on
+    yline(-1, '--k', 'LineWidth', LineWidth); grid on
+    ylabel('M_A')
+    datetick('x','HH:MM:SS');
+    xlim([tral_ds_epoch(1) tral_us_epoch(end)]);
+    ylim([0 2])
+    set(gca,'xticklabel',[],'tickdir','in','LineWidth',LineWidth,'FontSize',FontSize);
+
+    subplot('position',[left_base+width+hspace,down_base+height*0,width,height])
+    plot([tral_ds_epoch,tral_us_epoch], [M_slow_tral_ds;M_slow_tral_us], 'k','LineWidth',LineWidth); hold on
+    yline(1, '--k', 'LineWidth', LineWidth); hold on
+    yline(-1, '--k', 'LineWidth', LineWidth); grid on
+    ylabel('M_{sm}')
+    xlim([tral_ds_epoch(1) tral_us_epoch(end)]);
+    ylim([0 2])
+    datetick('x','HH:MM:SS');
+    set(gca,'tickdir','in','LineWidth',LineWidth,'FontSize',FontSize);
 end
 %% secondary properties
 % reconnection rate
@@ -779,7 +1157,46 @@ end
 function vertical_marks(mark_beg,mark_end,linestyle)
 % Plot vertical lines
     LineWidth = 4;%2
-    hold on;
+    hold on
     xline(mark_beg,linestyle,'LineWidth',LineWidth); hold on;
     xline(mark_end,linestyle,'LineWidth',LineWidth); hold on;
+end
+function vertical_shadows(shadow_beg, shadow_end, ymin, ymax, color)
+    vertice = [shadow_beg ymin; shadow_end ymin; shadow_end ymax; shadow_beg ymax];
+    order = [1 2 3 4];
+    hold on
+    patch('Faces',order,'Vertices',vertice,'FaceColor',color,'FaceAlpha',0.4,'EdgeColor','none');
+end
+function e_N_ss = calc_shock_normal(B_us,B_ds)
+    cross_B = cross(B_us, B_ds);
+    delta_B = B_us - B_ds;
+    r_N_ss = cross(cross_B, delta_B);
+    e_N_ss = r_N_ss / sqrt(dot(r_N_ss, r_N_ss));
+end
+function Va = calc_Alfven_speed(B_mod,Np,mp,mu0)
+    Va = B_mod * 1e-9 ./ sqrt(mu0 * mp * Np * 1e6) * 1e-3; % unit: km/s
+end
+function Cs = calc_sound_speed(gamma,pth,Np,mp)
+    Cs = sqrt(gamma * pth * 1e-9 / (Np * 1e6 * mp)) * 1e-3; % unit: km/s
+end
+function Vs = calc_slow_magnetosonic_speed(Va,Cs,theta_ss)
+    Vs = sqrt((Va.^2 + Cs.^2) / 2 - sqrt((Va.^2 + Cs.^2)^2 - 4 * Va.^2 .* Cs.^2 .* cos(theta_ss)^2) / 2); % unit: km/s
+end
+function V_HT = get_V_HT(v,B)
+%Get velocity of deHoffmann-Tellor frame
+%   input: v(n*3), time series of velocity vectors
+%          B(n*3), time series of magnetic field vectors
+%   output: v_HT, velocity of deHoffmann-Tellor frame
+    norm_B = sqrt(sum(B.^2,2));
+    K = zeros(3,3);
+    K_dot_v = zeros(3,3);
+    for i = 1:3
+        for j= 1:3
+           K(i,j) = mean(norm_B.^2.*kroneckerDelta(sym(i),sym(j))-B(:,i).*B(:,j));
+           K_dot_v(i,j) = mean((norm_B.^2.*kroneckerDelta(sym(i),sym(j))-B(:,i).*B(:,j)).*v(:,j));
+        end
+    end
+    K_dot_v = sum(K_dot_v,2);
+    V_HT = K^(-1)*K_dot_v;
+    V_HT = [double(V_HT(1)), double(V_HT(2)), double(V_HT(3))];
 end
